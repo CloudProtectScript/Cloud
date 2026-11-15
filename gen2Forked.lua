@@ -1746,7 +1746,7 @@ CustomFolder}end)()},h)L.Flags=setmetatable({},{__index=function(M,N)local O=L.c
 __newindex=function(M,N,O)local P=L.controls[N]if not P then ak.warn("Rayfield: no flag '"..tostring(N).."' to set")
 return end P:Set(O)end,__iter=function()local M return function()local N M,N=next(L.controls,M)if M then return M,N.
 value end return nil end end})L.settings={toggleKeybind=Enum.KeyCode.K,mouseOverride=true,keepOnScreen=true,welcomeToast
-=true,haptics=true,showProfile=true,usageAnalytics=true}L.screenGui=L:Create('ScreenGui',{Name=f.httpService:
+=true,haptics=true,showProfile=true,usageAnalytics=false}L.screenGui=L:Create('ScreenGui',{Name=f.httpService:
 GenerateGUID(false),IgnoreGuiInset=true,ResetOnSpawn=false,Enabled=true,DisplayOrder=ai.displayOrder.window,
 ZIndexBehavior=Enum.ZIndexBehavior.Global,Parent=f.guiContainer})L.main=L:Create('Frame',{BackgroundColor3=Color3.
 fromRGB(255,255,255),Name=L.name,ZIndex=1,AnchorPoint=Vector2.new(0.5,0.5),Position=UDim2.new(0.5,0,0.5,0),Size=UDim2.
@@ -1948,7 +1948,7 @@ settings.welcomeToast,callback=function(L)J.settings.welcomeToast=L J:SaveSettin
 'Haptics',description=[[A subtle tap as you interact, on devices that support haptics.]],value=J.settings.haptics,
 callback=function(L)J.settings.haptics=L al.setEnabled(L)J:SaveSettings()end}J.rfSettings:CreateToggle{name=
 'Usage analytics',description=
-[[Sends anonymous counts of which parts of this window are used, so it can be made better. Never your name, what you type or your messages. sirius.menu/privacy]]
+[[Disabled by Default, Courtesy of Cloud's Privacy first policy. Sends anonymous counts of which parts of this window are used, so it can be made better. Never your name, what you type or your messages. sirius.menu/privacy]]
 ,value=J.settings.usageAnalytics,callback=function(L)J.settings.usageAnalytics=L if not L and J._sia then J._sia:
 disable()J._sia=nil end J:SaveSettings()end}J.rfSettings:CreateSection{name='Window'}if J.layout.mode=='sidebar'and J.
 profile then J.rfSettings:CreateToggle{name='Show profile',description=
