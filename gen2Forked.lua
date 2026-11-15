@@ -39,7 +39,7 @@ o)end)if not s then r:Destroy()error(t,0)end local u=t::k.Window p=u local v=if 
 or w.Parent~=nil)end)end if q then task.spawn(q)q=nil end if f.secureMode then task.spawn(function()local w,x=f.
 fontManager:loadFont(i.fontAsset,Enum.FontWeight.Medium),f.fontManager:loadFont(i.fontAsset,Enum.FontWeight.SemiBold)if
 not u.unloaded and w and x and w~=f.fallbackFont and x~=f.fallbackFont then u:ChangeTheme{Font=w,TitleFont=x}end end)end
-task.spawn(function()task.wait(0)r:Destroy()task.wait(0.5)if not u.unloaded then u:Show()end end)return u end return l
+task.spawn(function()task.wait(0)r:Destroy()task.wait(0)if not u.unloaded then u:Show()end end)return u end return l
 end)()end,[3]=function()local b,c,d=a(3)local e return(function(...)local f={}f.__index=f f.__type='Action'local g=c.
 Parent.Parent.utility local h,i,j=d(g.variables),d(g.log),d(g.HapticEngine)function f.new(k,l)l=if typeof(l)=='table'
 then l else{}local m=setmetatable({window=assert(k,'Missing argument #1 (Window expected)'),name=l.name or l.Name or
