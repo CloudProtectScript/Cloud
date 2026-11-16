@@ -23,3 +23,7 @@ Which we sadly can't do anything about it (except the ui library).
  Any suspicions ? The code is 100% open source for you to investigate for any malicious activities.
 
  This project is followed under the Apache License 2.0
+
+ ## Credits
+ Cloud's framework is a derative work/fork from: [Rayfield gen2](https://github.com/SiriusSoftwareLtd/rayfield-gen2)
+
