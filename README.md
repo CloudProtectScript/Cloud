@@ -18,4 +18,8 @@ We also provide a way to download the entire repositery inside the UI and get a 
 No, cloud does not log anything outside of:
 - the ui library's Analytics
 - Roblox's logs
-the code is 100% open source.
+Which we sadly can't do anything about it (except the ui library).
+
+ Any suspicions ? The code is 100% open source for you to investigate for any malicious activities.
+
+ This project is followed under the Apache License 2.0
