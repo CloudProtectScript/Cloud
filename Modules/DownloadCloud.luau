@@ -17,6 +17,7 @@ download:SetText("Awaiting...")
 tabs.settings:CreateButton(
     {
         name = "Download cloud",
+        icon = IconsV2.GetIcon("download-square-bold"),
         callback = function()
             download:SetText("Downloading Loader..")
 
