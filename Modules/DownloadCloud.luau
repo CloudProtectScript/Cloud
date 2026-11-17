@@ -1,6 +1,8 @@
 -- Code beautified
 -- Credits to https://codebeautify.org/lua-beautifier
+local IconsV2 = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Footagesus/Icons/main/Main-v2.lua"))()
 
+IconsV2.SetIconsType("solar")
 
 local download =
     tabs.settings:CreateProgress(
