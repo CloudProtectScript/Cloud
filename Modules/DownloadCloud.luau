@@ -28,7 +28,7 @@ tabs.settings:CreateButton(
                 pcall(
                 function()
                     return game:HttpGet(
-                        "https://raw.githubusercontent.com/Dylanfoc2/Cloud/refs/heads/main/gen2Forked.lua"
+                        "https://raw.githubusercontent.com/Dylanfoc2/Cloud/refs/heads/main/gen2Forked.luau"
                     )
                 end
             )
