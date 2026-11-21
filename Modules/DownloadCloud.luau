@@ -1,7 +1,7 @@
 -- Code beautified
 -- Credits to https://codebeautify.org/lua-beautifier
 local IconsV2 = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Footagesus/Icons/main/Main-v2.lua"))()
-print("test")
+print("[CLOUD] Initialized Cloud Download file")
 IconsV2.SetIconsType("solar")
 
 local download =
@@ -9,6 +9,7 @@ local download =
     {
         name = "Download Progress",
         range = {0, 100},
+        icon = IconsV2.GetIcon("solar:graph-up-bold"),
         value = 0,
         steps = 5
     }
